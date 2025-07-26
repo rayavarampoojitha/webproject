@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>delete search</title>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.nav1{
+            background-color: black;
+            color: skyblue;
+            padding: 35px;
+        }
+         ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;  
+            background-color: rgb(151, 214, 238);
+            width: 30%;
+           /* margin-top: 0px;*/
+            position: absolute;
+            border: 1px solid #555;
+          
+        }
+       li a{
+            display: block;
+            padding: 41px;
+            padding-left: 37%;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+       }
+       /*ul li.active a{
+    background-color: #555;
+    color: white;
+}*/
+
+       li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+        font-size: 24px;
+        }
+        li{
+            border: 1px solid #555;
+        }
+        .na2{
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            margin-left: 650px;
+            background-color: skyblue;
+            margin-top: 70px;
+            border: 10px;
+            color: black;
+          
+        }
+         .f2{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        input[type="text"], input[type="submit"]{
+			padding: 10px;
+		}
+		
+        input[type="submit"]:hover {
+			background-color: blue;
+		}
+          
+</style>
+</head>
+<body>
+	 
+	  <div class="nav1">
+            <h1><center>STUDENT MANAGEMENT SYSTEM</h1></center>
+        </div>
+         <ul>
+                <li class="active"><a href="./home.jsp">Home</a></li>
+                <li><a href="add_student.html">Add Student</a></li>
+                <li><a href="update_student.html">Update student</a></li>
+                <li><a href="./view_all_students_controller1.jsp">View All Students</a></li>
+                <li><a href="search_student.html">Search Student</a></li>
+                <li><a href="delete_student.html">Delete Student</a></li>
+              </ul>
+        
+        <div class="na2">
+			<center><h1>Find Student</h1></center>
+       <form action="./delete.jsp" method="get">
+		    <div class="f2">
+                <label for="sno">Student Rollno:</label>
+                <input type="text" name="sno"/>
+                <input type="submit" value="Search"/>
+              </div>
+             
+                
+              </div>
+		   
+	   </form>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>student details</title>
+ <style>
+             *{
+            margin:0px;
+            padding: 0px;
+        }
+        .nav1{
+            background-color: black;
+            color: skyblue;
+            padding: 35px;
+        }
+         ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;  
+            background-color: rgb(151, 214, 238);
+            width: 30%;
+           /* margin-top: 0px;*/
+            position: absolute;
+            border: 1px solid #555;
+          
+        }
+       li a{
+            display: block;
+            padding: 41px;
+            padding-left: 37%;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+       }
+       /*ul li.active a{
+    background-color: #555;
+    color: white;
+}*/
+
+       li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+        font-size: 24px;
+        }
+        li{
+            border: 1px solid #555;
+        }
+
+        body{
+            background-image: url("https://www.veteranstodayarchives.com/wp-content/uploads/2019/09/degree.jpg");
+            height: 700px;
+            width: 100%;
+            
+        }
+        
+        .nav2{
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            margin-left: 650px;
+            background-color: skyblue;
+            margin-top: 70px;
+            border: 10px;
+            color: black;
+          
+        }
+        .f1{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        .f2{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        .f3{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        .f4{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        .f5{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+            margin-left: 30px;
+          
+        }
+        .f6{
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+
+        }
+        
+        
+        </style>
+</head>
+<body>
+            <div class="nav1">
+            <h1><center>STUDENT MANAGEMENT SYSTEM</h1></center>
+        </div>
+              <ul>
+                <li class="active"><a href="./home.jsp">Home</a></li>
+                <li><a href="add_student.html">Add Student</a></li>
+                <li><a href="update_student.html">Update student</a></li>
+                <li><a href="./view_all_students_controller1.jsp">View All Students</a></li>
+                <li><a href="search_student.html">Search Student</a></li>
+                <li><a href="delete_student.html">Delete Student</a></li>
+              </ul>
+              
+       
+        <div class="nav2">
+            <form action="./add_controller.jsp">
+               <div class="f1">
+                   <label for="fname">Student Name:</label>
+                   <input type="text" id="fname" name="fname" placeholder="studentname..">
+               </div>
+               <div class="f2">
+                <label for="sno">Student Rollno:</label>
+                <input type="text" id="sno" name="sno" placeholder="studentrollno...">
+              </div>
+              <div class="f3">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="female"/>Female
+              </div>
+              <div class="f6">
+                <label for ="course">Course:  </label>
+                <select name="course">
+                    <option>
+                        ------Select Course-------
+                    </option>
+                    <option>
+                        Java
+                    </option>
+                    <option>
+                        Python
+                    </option>
+                    <option>
+                        HTML
+                    </option>
+                </select>
+              </div>
+              <div class="f4">
+                <label for ="mobile">Mobile No:</label>
+                <input type="text" name="mobile"/>
+              </div>
+              <div class="f5">
+                <input type="submit" value="Add student"/>
+                <input type="reset" value="Clear"/>
+              </div>
+</body>
+</html>
